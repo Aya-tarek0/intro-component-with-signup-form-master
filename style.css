@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --bg : hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+     --GrayishBlue: hsl(246, 25%, 77%);
+}
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--bg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.paragrph{
+    margin-block-start: 200px;
+    margin-inline-start: 200px;
+    color: aliceblue;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    
+}
+.p1{
+    color: antiquewhite;
+line-height: 30px;
+font-size: 15px;
+}
+.try{
+    background-color: var(--Blue);
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: aliceblue;
+     height: auto;
+     padding: 3px;
+     border-radius: 10px;
+}
+.formContainer{
+    max-width: 500px;
+    margin-top: 70px;
+    margin-inline-start: 100px;
+    
+}
+.form{
+    padding: 20px;
+    background-color: white;
+    margin-block-start: 20px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 3px rgba(0, 0, 0, 0.2);
+
+    
+}
+input{
+    display: block;
+    padding: 20px;
+    margin-block: 20px;  
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid rgb(243, 231, 231);
+}
+ #btn{
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    background-color: var(--Green);
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+ }
+.last{
+    color: gray;
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+    
+}
+@media screen  and (max-width: 700px) {
+    body{
+        justify-content: center;
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .paragrph{
+        margin-block-start: 0px;
+    margin-inline-start: 0px;
+    width: 100%;       
+    }
+    .formContainer{
+        width: 100%;
+justify-content: center;  
+    margin-top: 0px; 
+   margin-inline-start: 0px; 
+    padding-inline: 20px; 
+ }
+ 
+}
