@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 :root{
     --bg : hsl(0, 100%, 74%) ;
@@ -13,11 +15,15 @@ body{
     background-color: var(--bg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
     
 }
 .container{
     display: flex;
     flex-direction: row;
+    max-width: 1200px;
+    justify-content: space-between;
 }
 .paragrph{
     margin-block-start: 200px;
@@ -46,13 +52,12 @@ font-size: 15px;
     text-align: center;
     color: aliceblue;
      height: auto;
-     padding: 3px;
+     padding: 20px;
      border-radius: 10px;
 }
 .formContainer{
     max-width: 500px;
     margin-top: 70px;
-    margin-inline-start: 100px;
     
 }
 .form{
@@ -92,13 +97,15 @@ input{
     text-align: center;
     
 }
-@media screen  and (max-width: 700px) {
+
+@media only screen and (max-width: 600px) {
     body{
         justify-content: center;
         text-align: center;
     }
     .container{
         flex-direction: column;
+
     }
     .paragrph{
         margin-block-start: 0px;
@@ -114,3 +121,9 @@ justify-content: center;
  }
  
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+   .container{
+    max-width: 1000;
+   }
+ }

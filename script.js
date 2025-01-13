@@ -46,7 +46,7 @@ else{
              emailError.id = "emailError"; 
              document.querySelector(".emaill").appendChild(emailError);
              } 
-             emailError.innerHTML = `<span style="color: red;">looks like this is not an email</span>`;
+             emailError.innerHTML = `<span style="color: red; font-size =10px">looks like this is not an email</span>`;
 
              }
    else{
